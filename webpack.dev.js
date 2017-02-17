@@ -11,8 +11,8 @@ module.exports = {
     './src/index'
   ],
   output: {
-    path: path.join(__dirname,'dist'),
-    filename: 'bundle.[hash:8].js',
+    path: path.join(__dirname,'/dist'),
+    filename: 'bundle.js',
     publicPath: '/dist/'
   },
   module: {
@@ -35,17 +35,6 @@ module.exports = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
-    new webpack.optimize.UglifyJsPlugin({
-      sourceMap: true,
-      warning: false,
-    }),
-    new ExtractTextPlugin('bundle.[hash:8].css'),
-    new HtmlWebpackPlugin({
-      filename: 'index.html',
-      template: './src/template/index.ejs',
-      config: config,
-      inject: 'body',
-      hash: false
-    })
+    new ExtractTextPlugin('bundle.css')
   ]
 }
