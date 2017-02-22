@@ -11,9 +11,9 @@ module.exports = {
     './src/index'
   ],
   output: {
-    path: path.join(__dirname,'/dist'),
+    path: path.join(__dirname,'./'),
     filename: 'bundle.js',
-    publicPath: '/dist/'
+    publicPath: '/'
   },
   module: {
     loaders: [
@@ -35,6 +35,13 @@ module.exports = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
-    new ExtractTextPlugin('bundle.css')
+    new ExtractTextPlugin('bundle.css'),
+    new HtmlWebpackPlugin({
+      filename: 'index.html',
+      template: './index.html',
+      config: config,
+      inject: 'body',
+      hash: false
+    })
   ]
 }
