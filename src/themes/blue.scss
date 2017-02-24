@@ -1,0 +1,345 @@
+$box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+$white: #fff;
+$main-color: #3b5999;
+
+.blue-container {
+  width: 85%;
+  margin: 10px auto;
+  max-width: 1000px;
+  background-color: #f3f3f3;
+  font-size: 12px;
+  border: 1px solid rgba(0,0,0,.14);
+  overflow: auto;
+  padding-bottom: 3rem;
+  .header-container {
+    width: 100%;
+    color: $white;
+    background-color: #3b5999;
+    box-shadow: $box-shadow;
+    position: relative;
+    height: 10rem;
+    direction: rtl;
+    &::after {
+      content: "";
+      width: 100%;
+      height:3.5rem;
+      background-color: $white;
+      box-shadow: $box-shadow;
+      position: absolute;
+      bottom: -3.5rem;
+      z-index: 1;
+    }
+    .name {
+      font-size: 4rem;
+      margin-right: 2rem;
+      padding-top: 2rem;
+    }
+    .label {
+      font-size: 1.5rem;
+      margin-right: 2rem;
+    }
+    .avatar {
+      width: 9rem;
+      height: 9rem;
+      box-shadow: $box-shadow;
+      position: absolute;
+      left: 3rem;
+      top: 3rem;
+      z-index: 2;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .education {
+    width: 48%;
+    box-shadow: $box-shadow;
+    display: inline-block;
+    margin-top: 6rem;
+    margin-left: 3rem;
+    background-color: $white;
+    padding: 2rem;
+    position: relative;
+    min-height: 15rem;
+    .line {
+      position: relative;;
+      &::before {
+        content: "";
+        background-color: $main-color;
+        left: 1.4rem;
+        top: 0;
+        width: 3px;
+        height: 100%;
+        position: absolute;
+        box-shadow: $box-shadow;
+      }
+      &::after {
+        content: "";
+        padding: 0.8rem;
+        border-radius: 50%;
+        background-color: $main-color;
+        left: 0.7rem;
+        top: 1rem;
+        position: absolute;
+        box-shadow: $box-shadow;
+      }
+    }
+    .label {
+      font-size:1.5rem;
+      background-image: url('../../assets/Icon.png');
+      background-repeat: no-repeat;
+      background-size: 3rem;
+      padding-left: 4rem;
+      line-height: 3rem;
+    }
+    .study-type {
+      display: inline-block;
+      font-size: 1rem;
+      padding-right: 1.3rem;
+      margin: 1.3rem 4rem;
+      border-right: 2px solid #898686;
+    }
+    .date {
+      display: inline-block;
+      background-color: $main-color;
+      color: $white;
+      font-size: 1rem;
+      padding: 0 1rem;
+      box-shadow: $box-shadow;
+    }
+    .university {
+      font-size: 2rem;
+      margin-left: 4rem;
+    }
+    .profession {
+      margin-left: 4rem;
+    }
+  }
+
+  .work {
+    width: 48%;
+    box-shadow: $box-shadow;
+    display: inline-block;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    background-color: $white;
+    padding: 2rem;
+    position: relative;
+    .label {
+      font-size:1.5rem;
+      background-image: url('../../assets/work.png');
+      background-repeat: no-repeat;
+      background-size: 3rem;
+      padding-left: 4rem;
+      line-height: 3rem;
+    }
+    .line {
+      position: relative;;
+      &::before {
+        content: "";
+        background-color: $main-color;
+        left: 1.4rem;
+        top: 0;
+        width: 3px;
+        height: 100%;
+        position: absolute;
+        box-shadow: $box-shadow;
+      }
+      &::after {
+        content: "";
+        padding: 0.8rem;
+        border-radius: 50%;
+        background-color: $main-color;
+        left: 0.7rem;
+        top: 1rem;
+        position: absolute;
+        box-shadow: $box-shadow;
+      }
+    }
+    .company {
+      display: inline-block;
+      font-size: 1rem;
+      padding-right: 1.3rem;
+      margin: 1rem 4rem;
+      border-right: 2px solid #898686;
+    }
+    .date {
+      display: inline-block;
+      background-color: $main-color;
+      color: $white;
+      font-size: 1rem;
+      padding: 0 1rem;
+      box-shadow: $box-shadow;
+    }
+    .position {
+      color: #898686;
+      font-size: 1rem;
+      margin-left: 4rem;
+    }
+    .description {
+      margin-left: 4rem;
+      line-height: 1.5rem;
+      font-size: 14px;
+      margin-top: 1rem;
+    }
+  }
+  .projects {
+    width: 48%;
+    box-shadow: $box-shadow;
+    display: inline-block;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    background-color: $white;
+    padding: 2rem;
+    .line {
+      position: relative;;
+      &::before {
+        content: "";
+        background-color: $main-color;
+        left: 1.4rem;
+        top: 0;
+        width: 3px;
+        height: 100%;
+        position: absolute;
+        box-shadow: $box-shadow;
+      }
+      &::after {
+        content: "";
+        padding: 0.8rem;
+        border-radius: 50%;
+        background-color: $main-color;
+        left: 0.7rem;
+        top: 0.3rem;
+        position: absolute;
+        box-shadow: $box-shadow;
+      }
+    }
+    .label {
+      font-size:1.5rem;
+      background-image: url('../../assets/projects.png');
+      background-repeat: no-repeat;
+      background-size: 3rem;
+      padding-left: 4rem;
+      line-height: 3rem;
+    }
+    .name {
+      font-size: 1.1rem;
+      padding-right: 1.3rem;
+      margin: 0.5rem;
+      margin-left: 4rem;
+      font-weight: bold;
+    }
+    .link {
+      background-color: $main-color;
+      line-height: 2rem;
+      margin-left: 4rem;
+      direction: rtl;
+      box-shadow: $box-shadow;
+    }
+    a {
+      background-color:  $white;
+      color: $main-color;
+      font-size: 1rem;
+      padding: 0 1rem;
+      box-shadow: $box-shadow;
+      text-decoration: none;
+      margin-right: 1rem;
+      line-height: 1.5rem;
+      vertical-align: middle;
+    }
+    .description {
+      margin-left: 5.2rem;
+      line-height: 1.5rem;
+      font-size: 14px;
+      padding-bottom: 1rem;
+    }
+  }
+  .contact {
+    width: 25%;
+    box-shadow: $box-shadow;
+    vertical-align: top;
+    float: right;
+    margin-top: 6rem;
+    margin-right: 3rem;
+    background-color: $white;
+    padding: 2rem;
+    font-size: 1rem;
+    line-height: 3rem;
+    .label {
+      font-size:1.5rem;
+      background-image: url('../../assets/contact.png');
+      background-repeat: no-repeat;
+      background-size: 3rem;
+      padding-left: 4rem;
+      line-height: 3rem;
+    }
+    .email {
+      background: url('../../assets/email.png');
+      background-repeat: no-repeat;
+      background-size: 1.4rem;
+      background-position: 1rem;
+      padding-left: 4rem;
+    }
+    .weibo {
+      background: url('../../assets/weibo.png');
+      background-repeat: no-repeat;
+      background-size: 1.4rem;
+      background-position: 1rem;
+      padding-left: 4rem;
+    }
+    .weixin {
+      background: url('../../assets/weixin.png');
+      background-repeat: no-repeat;
+      background-size: 1.4rem;
+      background-position: 1rem;
+      padding-left: 4rem;
+    }
+    .github {
+      background: url('../../assets/github.png');
+      background-repeat: no-repeat;
+      background-size: 1.4rem;
+      background-position: 1rem;
+      padding-left: 4rem;
+    }
+  }
+
+
+  .skills {
+    width: 25%;
+    box-shadow: $box-shadow;
+    margin-top: 2rem;
+    margin-right: 3rem;
+    background-color: $white;
+    padding: 2rem;
+    font-size: 1rem;
+    line-height: 3rem;
+    float: right;
+    .label {
+      font-size:1.5rem;
+      background-image: url('../../assets/skills.png');
+      background-repeat: no-repeat;
+      background-size: 3rem;
+      padding-left: 4rem;
+      line-height: 3rem;
+    }
+    .name {
+      color: $white;
+      background-color: $main-color;
+      font-size: 1.5rem;
+      text-align: center;
+      box-shadow: $box-shadow;
+      margin-top: 1rem;
+    }
+    .key {
+      color: #898686;
+      font-size: 1.1rem;
+    }
+    .description {
+      margin-left: 1.5rem;
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+  }
+}

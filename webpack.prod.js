@@ -9,7 +9,7 @@ module.exports = {
   output: {
     path: path.join(__dirname,'dist'),
     filename: 'bundle.[hash:8].js',
-    publicPath: '/dist/'
+    publicPath: './'
   },
   module: {
     loaders: [
@@ -22,7 +22,11 @@ module.exports = {
         test: /\.scss$/,
 	      exclude: /node_modules/,
 	      loader: ExtractTextPlugin.extract("style-loader", "css-loader!sass-loader")
-      }
+      },
+      {
+		    test: /\.(jpe?g|png|gif|svg)$/,
+        loader: 'url?limit=8024&name=images/[name].[ext]'
+			}
     ],
   },
   resolve: {

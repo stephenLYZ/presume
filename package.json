@@ -6,7 +6,7 @@
   "scripts": {
     "server": "node server.js",
     "build": "rimraf dist & cross-env NODE_ENV=production webpack --config webpack.prod.js ",
-    "export": "npm run build && html-pdf ./dist/index.html ./dist/index.pdf",
+    "export": " wkhtmltopdf ./dist/index.html ./dist/index.pdf",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
@@ -49,10 +49,10 @@
     "webpack": "^1.13.2",
     "webpack-dashboard": "^0.2.0",
     "webpack-dev-middleware": "^1.8.2",
-    "webpack-hot-middleware": "^2.12.2"
+    "webpack-hot-middleware": "^2.12.2",
+    "wkhtmltopdf": "^0.3.4"
   },
   "dependencies": {
-    "html-pdf": "^2.1.0",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "react-mdl": "^1.9.0"
