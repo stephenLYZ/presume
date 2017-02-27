@@ -17,14 +17,14 @@ export default class Blue extends Component {
     return (
       <div className="blue-container">
         <Header {...this.props} />
-        <div className="up">
-          <Education {...this.props} />
-          <Contact {...this.props} />
+        <div>
+            <Education {...this.props} />
+            <Contact {...this.props} />
         </div>
         <div>
-          <Skills {...this.props} />
-          <Work {...this.props} />
-          <Projects {...this.props} />
+            <Skills {...this.props} />
+            <Work {...this.props} />
+            <Projects {...this.props} />
         </div>
       </div>
     )

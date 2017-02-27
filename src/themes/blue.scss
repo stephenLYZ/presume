@@ -3,49 +3,48 @@ $white: #fff;
 $main-color: #3b5999;
 
 .blue-container {
-  width: 85%;
-  margin: 10px auto;
-  max-width: 1000px;
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1200px;
   background-color: #f3f3f3;
   font-size: 12px;
   border: 1px solid rgba(0,0,0,.14);
   overflow: auto;
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
+
   .header-container {
     width: 100%;
     color: $white;
     background-color: #3b5999;
     box-shadow: $box-shadow;
     position: relative;
-    height: 10rem;
+    height: 1.2rem;
     direction: rtl;
-    &::after {
+    &::before {
       content: "";
       width: 100%;
-      height:3.5rem;
+      height: 30%;
       background-color: $white;
       box-shadow: $box-shadow;
       position: absolute;
-      bottom: -3.5rem;
-      z-index: 1;
+      bottom: -30%;
     }
     .name {
-      font-size: 4rem;
-      margin-right: 2rem;
-      padding-top: 2rem;
+      font-size: .5rem;
+      margin-right: .44rem;
+      padding-top: .15rem;
     }
     .label {
-      font-size: 1.5rem;
-      margin-right: 2rem;
+      font-size: .2rem;
+      margin-right: .44rem;
     }
     .avatar {
-      width: 9rem;
-      height: 9rem;
+      width: 1.2rem;
+      height: 1.2rem;
       box-shadow: $box-shadow;
       position: absolute;
-      left: 3rem;
-      top: 3rem;
-      z-index: 2;
+      left: 4%;
+      top: .15rem;
       img {
         width: 100%;
         height: 100%;
@@ -54,21 +53,21 @@ $main-color: #3b5999;
   }
 
   .education {
-    width: 48%;
+    width: 45%;
     box-shadow: $box-shadow;
     display: inline-block;
-    margin-top: 6rem;
-    margin-left: 3rem;
+    margin-top: 8%;
+    margin-left: 2%;
     background-color: $white;
-    padding: 2rem;
+    padding: 2%;
     position: relative;
-    min-height: 15rem;
+    min-height: 2.05rem;
     .line {
       position: relative;;
       &::before {
         content: "";
         background-color: $main-color;
-        left: 1.4rem;
+        left: .168rem;
         top: 0;
         width: 3px;
         height: 100%;
@@ -77,70 +76,117 @@ $main-color: #3b5999;
       }
       &::after {
         content: "";
-        padding: 0.8rem;
+        padding: 0.18rem;
         border-radius: 50%;
         background-color: $main-color;
-        left: 0.7rem;
-        top: 1rem;
+        top: .12rem;
         position: absolute;
         box-shadow: $box-shadow;
       }
     }
     .label {
-      font-size:1.5rem;
+      font-size: .18rem;
       background-image: url('../../assets/Icon.png');
       background-repeat: no-repeat;
-      background-size: 3rem;
-      padding-left: 4rem;
-      line-height: 3rem;
+      background-size: .36rem;
+      padding-left: .48rem;
+      line-height: .36rem;
     }
     .study-type {
       display: inline-block;
-      font-size: 1rem;
-      padding-right: 1.3rem;
-      margin: 1.3rem 4rem;
+      font-size: .16rem;
+      padding-right: .156rem;
+      margin: .156rem .48rem;
       border-right: 2px solid #898686;
     }
     .date {
       display: inline-block;
       background-color: $main-color;
       color: $white;
-      font-size: 1rem;
-      padding: 0 1rem;
+      font-size: .12rem;
+      padding: 0 .12rem;
       box-shadow: $box-shadow;
     }
     .university {
-      font-size: 2rem;
-      margin-left: 4rem;
+      font-size: .3rem;
+      margin-left: .48rem;
     }
     .profession {
-      margin-left: 4rem;
+      margin-left: .48rem;
+    }
+  }
+
+  .contact {
+    width: 35%;
+    box-shadow: $box-shadow;
+    float: right;
+    margin-top: 8%;
+    margin-right: 3%;
+    background-color: $white;
+    padding: .24rem;
+    font-size: .15rem;
+    line-height: .36rem;
+    .label {
+      font-size: .18rem;
+      background-image: url('../../assets/contact.png');
+      background-repeat: no-repeat;
+      background-size: .36rem;
+      padding-left: .48rem;
+      line-height: .36rem;
+    }
+    .email {
+      background: url('../../assets/email.png');
+      background-repeat: no-repeat;
+      background-size: .168rem;
+      background-position: .12rem;
+      padding-left: .48rem;
+    }
+    .weibo {
+      background: url('../../assets/weibo.png');
+      background-repeat: no-repeat;
+      background-size: .168rem;
+      background-position: .12rem;
+      padding-left: .48rem;
+    }
+    .weixin {
+      background: url('../../assets/weixin.png');
+      background-repeat: no-repeat;
+      background-size: .168rem;
+      background-position: .12rem;
+      padding-left: .48rem;
+    }
+    .github {
+      background: url('../../assets/github.png');
+      background-repeat: no-repeat;
+      background-size: .168rem;
+      background-position: .12rem;
+      padding-left: .48rem;
     }
   }
 
   .work {
-    width: 48%;
+    width: 45%;
     box-shadow: $box-shadow;
     display: inline-block;
-    margin-top: 2rem;
-    margin-left: 3rem;
+    margin-top: 4%;
+    margin-left: 2%;
     background-color: $white;
-    padding: 2rem;
+    padding: 2%;
     position: relative;
     .label {
-      font-size:1.5rem;
+      font-size: .18rem;
       background-image: url('../../assets/work.png');
       background-repeat: no-repeat;
-      background-size: 3rem;
-      padding-left: 4rem;
-      line-height: 3rem;
+      background-size: .36rem;
+      padding-left: .48rem;
+      line-height: .36rem;
     }
     .line {
       position: relative;;
       &::before {
         content: "";
         background-color: $main-color;
-        left: 1.4rem;
+        left: .168rem;
         top: 0;
         width: 3px;
         height: 100%;
@@ -149,56 +195,58 @@ $main-color: #3b5999;
       }
       &::after {
         content: "";
-        padding: 0.8rem;
+        padding: 0.18rem;
         border-radius: 50%;
         background-color: $main-color;
-        left: 0.7rem;
-        top: 1rem;
+        top: .12rem;
         position: absolute;
         box-shadow: $box-shadow;
       }
     }
     .company {
       display: inline-block;
-      font-size: 1rem;
-      padding-right: 1.3rem;
-      margin: 1rem 4rem;
+      font-size: .14rem;
+      padding-right: .156rem;
+      margin: .24rem .12rem .24rem .48rem;
       border-right: 2px solid #898686;
     }
     .date {
       display: inline-block;
       background-color: $main-color;
       color: $white;
-      font-size: 1rem;
-      padding: 0 1rem;
+      font-size: .12rem;
+      padding: 0 .12rem;
       box-shadow: $box-shadow;
     }
     .position {
       color: #898686;
-      font-size: 1rem;
-      margin-left: 4rem;
+      font-size: .15rem;
+      margin-left: .48rem;
+      font-weight: bold;
     }
     .description {
-      margin-left: 4rem;
-      line-height: 1.5rem;
-      font-size: 14px;
-      margin-top: 1rem;
+      margin-left: .48rem;
+      line-height: .2rem;
+      font-size: .14rem;
+      margin-top: .12rem;
     }
   }
   .projects {
-    width: 48%;
+    width: 45%;
     box-shadow: $box-shadow;
     display: inline-block;
-    margin-top: 2rem;
-    margin-left: 3rem;
+    margin-top: 2%;
+    margin-left: 2%;
     background-color: $white;
-    padding: 2rem;
+    padding: 2%;
+    position: relative;
     .line {
-      position: relative;;
+      position: relative;
+      padding-top: .2rem;
       &::before {
         content: "";
         background-color: $main-color;
-        left: 1.4rem;
+        left: .168rem;
         top: 0;
         width: 3px;
         height: 100%;
@@ -207,139 +255,91 @@ $main-color: #3b5999;
       }
       &::after {
         content: "";
-        padding: 0.8rem;
+        padding: 0.18rem;
         border-radius: 50%;
         background-color: $main-color;
-        left: 0.7rem;
-        top: 0.3rem;
+        top: .12rem;
         position: absolute;
         box-shadow: $box-shadow;
       }
     }
     .label {
-      font-size:1.5rem;
+      font-size: .18rem;
       background-image: url('../../assets/projects.png');
       background-repeat: no-repeat;
-      background-size: 3rem;
-      padding-left: 4rem;
-      line-height: 3rem;
+      background-size: .36rem;
+      padding-left: .48rem;
+      line-height: .36rem;
     }
     .name {
-      font-size: 1.1rem;
-      padding-right: 1.3rem;
-      margin: 0.5rem;
-      margin-left: 4rem;
+      font-size: .18rem;
+      padding-right: .156rem;
+      margin: .06rem;
+      margin-left: .48rem;
       font-weight: bold;
     }
     .link {
       background-color: $main-color;
-      line-height: 2rem;
-      margin-left: 4rem;
+      line-height: .24rem;
+      margin-left: .48rem;
       direction: rtl;
       box-shadow: $box-shadow;
     }
     a {
       background-color:  $white;
       color: $main-color;
-      font-size: 1rem;
-      padding: 0 1rem;
+      font-size: .12rem;
+      padding: 0 .12rem;
       box-shadow: $box-shadow;
       text-decoration: none;
-      margin-right: 1rem;
-      line-height: 1.5rem;
+      margin-right: .12rem;
+      line-height: .18rem;
       vertical-align: middle;
     }
     .description {
-      margin-left: 5.2rem;
-      line-height: 1.5rem;
-      font-size: 14px;
-      padding-bottom: 1rem;
+      margin-left: .48rem;
+      line-height: .2rem;
+      font-size: .14rem;
+      margin-top: .12rem;
     }
   }
-  .contact {
-    width: 25%;
+
+  .skills {
+    width: 35%;
     box-shadow: $box-shadow;
     vertical-align: top;
     float: right;
-    margin-top: 6rem;
-    margin-right: 3rem;
+    margin-top: 4%;
+    margin-right: 3%;;
     background-color: $white;
-    padding: 2rem;
-    font-size: 1rem;
-    line-height: 3rem;
+    padding: .24rem;
+    font-size: .15rem;
+    line-height: .36rem;
     .label {
-      font-size:1.5rem;
-      background-image: url('../../assets/contact.png');
-      background-repeat: no-repeat;
-      background-size: 3rem;
-      padding-left: 4rem;
-      line-height: 3rem;
-    }
-    .email {
-      background: url('../../assets/email.png');
-      background-repeat: no-repeat;
-      background-size: 1.4rem;
-      background-position: 1rem;
-      padding-left: 4rem;
-    }
-    .weibo {
-      background: url('../../assets/weibo.png');
-      background-repeat: no-repeat;
-      background-size: 1.4rem;
-      background-position: 1rem;
-      padding-left: 4rem;
-    }
-    .weixin {
-      background: url('../../assets/weixin.png');
-      background-repeat: no-repeat;
-      background-size: 1.4rem;
-      background-position: 1rem;
-      padding-left: 4rem;
-    }
-    .github {
-      background: url('../../assets/github.png');
-      background-repeat: no-repeat;
-      background-size: 1.4rem;
-      background-position: 1rem;
-      padding-left: 4rem;
-    }
-  }
-
-
-  .skills {
-    width: 25%;
-    box-shadow: $box-shadow;
-    margin-top: 2rem;
-    margin-right: 3rem;
-    background-color: $white;
-    padding: 2rem;
-    font-size: 1rem;
-    line-height: 3rem;
-    float: right;
-    .label {
-      font-size:1.5rem;
+      font-size: .18rem;
       background-image: url('../../assets/skills.png');
       background-repeat: no-repeat;
-      background-size: 3rem;
-      padding-left: 4rem;
-      line-height: 3rem;
+      background-size: .36rem;
+      padding-left: .48rem;
+      line-height: .36rem;
     }
     .name {
       color: $white;
       background-color: $main-color;
-      font-size: 1.5rem;
+      font-size: .18rem;
       text-align: center;
       box-shadow: $box-shadow;
-      margin-top: 1rem;
+      margin-top: .12rem;
     }
     .key {
       color: #898686;
-      font-size: 1.1rem;
+      font-size: .16rem;
+      margin-top: .12rem;
     }
     .description {
-      margin-left: 1.5rem;
-      font-size: 1rem;
-      line-height: 1.5rem;
+      margin-left: .18rem;
+      font-size: .12rem;
+      line-height: .18rem;
     }
   }
 }
